@@ -8,10 +8,15 @@
   <style>
     body {
       font-family: 'Quicksand', sans-serif;
-      background: #fff0f5;
+      background-image: url('fondo.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       padding: 20px;
       text-align: center;
     }
+
 
     .producto {
       display: inline-block;
@@ -93,7 +98,7 @@
   <h1 id="Inicio">catálogo</h1>
   <input type="text" id="buscador" placeholder="Buscar productos..." style="padding: 10px; margin: 20px auto; display: block; width: 80%; max-width: 400px; border-radius: 10px; border: 1px solid #ccc;">
 
-  <<div class="producto" data-categoria="crema">
+    <div class="producto" data-categoria="crema">
     <img src="imagenes/crema.jpg" alt="Crema">
     <h2>Crema para untar</h2>
     <p>$2.500</p>
@@ -108,168 +113,25 @@
   
     <!-- Botón de agregar con el sabor incluido -->
     <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
+    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
+    </div>
+    <div class="producto" data-categoria="crema">
+    <img src="imagenes/crema.jpg" alt="Crema">
+    <h2>Crema para untar</h2>
+    <p>$2.500</p>
+  
+    <!-- Selector de sabor -->
+    <label for="sabor">Sabor:</label>
+    <select id="sabor-crema1">
+      <option value="Avellana">Avellana</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Maní">Maní</option>
+    </select>
+  
+    <!-- Botón de agregar con el sabor incluido -->
+    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema1')">Agregar al carrito</button>
     <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
   </div>
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-  
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>
-   
-  <<div class="producto" data-categoria="crema">
-    <img src="imagenes/crema.jpg" alt="Crema">
-    <h2>Crema para untar</h2>
-    <p>$2.500</p>
-  
-    <!-- Selector de sabor -->
-    <label for="sabor">Sabor:</label>
-    <select id="sabor-crema">
-      <option value="Avellana">Avellana</option>
-      <option value="Chocolate">Chocolate</option>
-      <option value="Maní">Maní</option>
-    </select>
-  
-    <!-- Botón de agregar con el sabor incluido -->
-    <button onclick="agregarAlCarritoConSabor('Crema para untar', 2500, 'sabor-crema')">Agregar al carrito</button>
-    <button onclick="mostrarDescripcion('Crema de Avellana', 'Crema suave 100% avellanas, sin azúcar, ideal para pan o postres.')">Ver más</button>
-  </div>  
-  
-
   <div id="carrito">
     <h2>Carrito de compras</h2>
     <ul id="lista-carrito"></ul>
